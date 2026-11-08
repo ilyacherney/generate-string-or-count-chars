@@ -1,0 +1,20 @@
+<p>generate string of length</p>
+<input id=genLen></input>
+<button onClick="generate()">generate</button>
+
+<script>
+function generate() {
+  var genLen = document.getElementById("genLen").value;
+  console.log(genLen);
+  var generated = "";
+  for (var i = 0; i < genLen; i++) {
+     generated += 'a';
+  }
+  alert(generated);
+}
+</script>
+
+<p>count entered symbols</p>
+<input id=input></input>
+
+<button onClick=alert(document.getElementById("input").value.length)>count</button>
